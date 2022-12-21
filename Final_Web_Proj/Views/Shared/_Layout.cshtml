@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RESULT MANAGEMENT SYSTEM</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+</head>
+<body>
+   <header>
+        <div class="main">
+            <ul>
+                <li class="active"><a href="Untitled-1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login </a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>RESULT MANAGEMENT SYSTEM</h1>
+
+        </div>
+
+        <div class="button">
+            <a href="#" class="btn">CHECK THE RESULT</a>
+            <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Final_Web_Proj - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
